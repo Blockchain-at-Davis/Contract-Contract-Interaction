@@ -31,7 +31,7 @@ var contract_abi = [...]
 var contract_addr = "0x1234....."
 var contract = new ethers.Contract(contract_addr, contract_abi, provider);
 
-var contract_with_signer = contract.connect(signer);
+var contract_with_signer = contract.connect(signer0);
 
 contract_with_signer.setCalleeAddr("0xABCD.....");
 contract_with_signer.CallerSetNum(1000);
